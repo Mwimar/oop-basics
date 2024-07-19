@@ -8,6 +8,12 @@ public class User {
     public LocalDate birthDay;
     public ArrayList<Book> books= new ArrayList<Book>();
 
+    //user constructor
+    User(String name, String birthDay){
+        this.name=name;
+        this.birthDay= LocalDate.parse(birthDay);
+    }
+
     public int age (){
     Period age = Period.between(this.birthDay, LocalDate.now());
 return age.getYears();

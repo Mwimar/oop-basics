@@ -5,10 +5,10 @@ import java.time.LocalDate;
     public static void main(String[] args) {
 
 
-        User user = new User();
+        User user = new User("Yungeen Ace","1993-05-15");
         Book book = new Book();
-        user.name = "Yungeen Ace";
-        user.birthDay=LocalDate.parse("1993-05-15");
+//        user.name = "Yungeen Ace";
+//        user.birthDay=LocalDate.parse("1993-05-15");
         user.borrow(book);
 //        System.out.printf("%s was born in %s, and is %d years old.",User.name,User.birthDay.toString(), User.age());
         book.title="Absolute Power";
