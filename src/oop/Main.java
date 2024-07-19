@@ -9,6 +9,7 @@ import java.time.LocalDate;
         Book book = new Book();
         User.name = "Yungeen Ace";
         User.birthDay=LocalDate.parse("1993-05-15");
+        User.borrow(book);
 //        System.out.printf("%s was born in %s, and is %d years old.",User.name,User.birthDay.toString(), User.age());
         book.title="Absolute Power";
         book.author="Robert Anguka";
