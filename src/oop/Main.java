@@ -5,14 +5,15 @@ import java.time.LocalDate;
     public static void main(String[] args) {
 
 
-        User User = new User();
+        User user = new User();
         Book book = new Book();
-        User.name = "Yungeen Ace";
-        User.birthDay=LocalDate.parse("1993-05-15");
-        User.borrow(book);
+        user.name = "Yungeen Ace";
+        user.birthDay=LocalDate.parse("1993-05-15");
+        user.borrow(book);
 //        System.out.printf("%s was born in %s, and is %d years old.",User.name,User.birthDay.toString(), User.age());
         book.title="Absolute Power";
         book.author="Robert Anguka";
-        System.out.printf("%s was authored by %s", book.title,book.author);
+        System.out.printf("%s was authored by %s\n", book.title,book.author);
+        System.out.printf("%s has borrowed %s\n",user.name, user.books.toString());
     }
 }
