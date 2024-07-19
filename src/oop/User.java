@@ -4,14 +4,21 @@ import java.time.Period;
 import java.util.ArrayList;
 
 public class User {
-    public String name;
-    public LocalDate birthDay;
+    private String name;
+    private LocalDate birthDay;
     public ArrayList<Book> books= new ArrayList<Book>();
 
     //user constructor
     User(String name, String birthDay){
         this.name=name;
         this.birthDay= LocalDate.parse(birthDay);
+    }
+
+    public String getName(){
+        return this.name;
+    }
+    public String getBirthday(){
+        return this.birthDay.toString();
     }
 
     public int age (){
