@@ -21,6 +21,10 @@ public class User {
         return this.birthDay.toString();
     }
 
+    public String borrowedBooks(){
+        return this.books.toString();
+    }
+
     public int age (){
     Period age = Period.between(this.birthDay, LocalDate.now());
 return age.getYears();
