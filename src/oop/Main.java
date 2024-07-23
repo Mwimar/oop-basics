@@ -7,7 +7,7 @@ import java.time.LocalDate;
 
         User user = new User("Yungeen Ace","1993-05-15");//Abstraction is hiding complexities of a class
         Book book = new Book("Absolute Power","Robert Anguka",56);
-        AudioBook = new AudioBook("Get Rich", "50 Cent", 40);
+        AudioBook getrich = new AudioBook("Get Rich", "50 Cent", 40);
 //        user.name = "Yungeen Ace";
 //        user.birthDay=LocalDate.parse("1993-05-15");
         user.borrow(book);
