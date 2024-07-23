@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class User {
     private String name;
     private LocalDate birthDay;
-    public ArrayList<Book> books= new ArrayList<Book>();
+    private ArrayList<Book> books= new ArrayList<Book>();
 
     //user constructor
     User(String name, String birthDay){

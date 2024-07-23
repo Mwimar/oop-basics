@@ -11,9 +11,9 @@ import java.time.LocalDate;
 //        user.birthDay=LocalDate.parse("1993-05-15");
         user.borrow(book);
         System.out.printf("%s was born in %s, and is %d years old.\n",user.getName(), user.age(), user.age());
-//        book.title="Absolute Power";
-//        book.author="Robert Anguka";
+        book.title="Absolute Power";
+        book.author="Robert Anguka";
         System.out.printf("%s was authored by %s\n", book.getTitle(),book.getAuthor());
-        System.out.printf("%s has borrowed %s\n",user.getName(), user.books.toString());
+        System.out.printf("%s has borrowed %s\n",user.getName(), user.borrowedBooks());
     }
 }
