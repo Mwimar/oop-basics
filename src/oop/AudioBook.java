@@ -1,8 +1,8 @@
 package oop;
 public class AudioBook extends Book {
 private int runTime;
-AudioBook(String title, String author, Integer pageCount, Integer runTime){
-    super(title,author,pageCount);
+AudioBook(String title, String author, Integer runTime){
+    super(title,author,0);
     this.runTime=runTime;
 }
 }
